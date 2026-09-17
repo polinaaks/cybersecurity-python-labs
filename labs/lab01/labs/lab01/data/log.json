@@ -1,0 +1,83 @@
+[
+    {
+        "event": "login",
+        "user": "user2",
+        "timestamp": "2026-09-17 00:01:48",
+        "args": [
+            "user2",
+            "Qwerty!2023"
+        ],
+        "kwargs": {},
+        "result": "success"
+    },
+    {
+        "event": "login",
+        "user": "user2",
+        "timestamp": "2026-09-17 00:01:48",
+        "args": [
+            "user2",
+            "Wrong123!"
+        ],
+        "kwargs": {},
+        "result": "failure"
+    },
+    {
+        "event": "login",
+        "user": "",
+        "timestamp": "2026-09-17 00:01:48",
+        "args": [
+            "",
+            "Qwerty!2023"
+        ],
+        "kwargs": {},
+        "result": "error: Логін або пароль не можуть бути порожніми."
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-17 22:09:31",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "student1",
+        "result": "failure",
+        "timestamp": "2026-09-17 22:09:31",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "user_test",
+        "result": "failure",
+        "timestamp": "2026-09-17 22:09:31",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-17 22:44:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "failure",
+        "timestamp": "2026-09-17 22:44:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "student1",
+        "result": "failure",
+        "timestamp": "2026-09-17 22:44:40",
+        "args": [],
+        "kwargs": {}
+    }
+]
