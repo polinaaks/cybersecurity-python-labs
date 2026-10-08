@@ -1,0 +1,98 @@
+{
+  "summary": {
+    "total_lines": 68,
+    "parsed": 68,
+    "malformed": 0,
+    "entries_in_range": 68,
+    "first_time": "2026-09-27 08:00:00",
+    "last_time": "2026-09-27 19:06:00",
+    "min_status": 400
+  },
+  "top_error_ips": [
+    {
+      "ip": "203.0.113.99",
+      "errors": 18,
+      "statuses": {
+        "404": 9,
+        "400": 4,
+        "401": 2,
+        "403": 2,
+        "500": 1
+      }
+    },
+    {
+      "ip": "192.0.2.11",
+      "errors": 7,
+      "statuses": {
+        "401": 3,
+        "400": 2,
+        "500": 1,
+        "404": 1
+      }
+    },
+    {
+      "ip": "192.0.2.10",
+      "errors": 4,
+      "statuses": {
+        "500": 2,
+        "403": 1,
+        "400": 1
+      }
+    },
+    {
+      "ip": "203.0.113.45",
+      "errors": 3,
+      "statuses": {
+        "400": 1,
+        "404": 1,
+        "403": 1
+      }
+    },
+    {
+      "ip": "198.51.100.23",
+      "errors": 3,
+      "statuses": {
+        "403": 2,
+        "404": 1
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "attack_type": "SQLi",
+      "ip": "203.0.113.99",
+      "timestamp": "2026-09-27T18:30:00+03:00",
+      "request": "GET /login?user=admin' OR '1'='1"
+    },
+    {
+      "attack_type": "SQLi",
+      "ip": "203.0.113.99",
+      "timestamp": "2026-09-27T18:32:00+03:00",
+      "request": "GET /search?q=1%27%20OR%201%3D1--"
+    },
+    {
+      "attack_type": "Directory Traversal",
+      "ip": "203.0.113.99",
+      "timestamp": "2026-09-27T18:34:00+03:00",
+      "request": "GET /../../etc/passwd"
+    },
+    {
+      "attack_type": "Directory Traversal",
+      "ip": "203.0.113.99",
+      "timestamp": "2026-09-27T18:36:00+03:00",
+      "request": "GET /download?file=../../../etc/shadow"
+    },
+    {
+      "attack_type": "XSS",
+      "ip": "203.0.113.99",
+      "timestamp": "2026-09-27T18:38:00+03:00",
+      "request": "GET /search?q=<script>alert(1)</script>"
+    },
+    {
+      "attack_type": "XSS",
+      "ip": "203.0.113.99",
+      "timestamp": "2026-09-27T18:40:00+03:00",
+      "request": "GET /comment?text=%3Cscript%3Ealert(1)%3C/script%3E"
+    }
+  ]
+}
